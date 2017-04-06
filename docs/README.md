@@ -44,7 +44,7 @@ mmcblk0     179:0    0  7.4G  0 disk
 
 Please note the first on the list is the current Hard Drive and not the Micro SD you are looking for, which is `/dev/mmcblk0` in this case.
 
-As alternative, you might try
+As an alternative, you might try
 ```sh
 $ sudo fdisk -l
 Disk /dev/sda: 477 GiB, 512110190592 bytes, 1000215216 sectors
@@ -72,7 +72,7 @@ On **MacOSX** you might need to open **Disks** software and click _(i)_, or find
 
 Please note you are looking for a driver like `/dev/mmcblk0`, or better, something that is *NOT your Hard Drive*.
 
-Once you've found the right path for your Micro SD card, you can write the following on a terminal:
+Once you've found the right path for your Micro SD card, you can write the following in a terminal:
 
 ```sh
 $ sudo dd if=~/Downloads/benja-rpi2.iso of=/dev/mmcblk0 bs=8192
@@ -81,9 +81,9 @@ $ sudo dd if=~/Downloads/benja-rpi2.iso of=/dev/mmcblk0 bs=8192
 Accordingly with both your computer SD card slot and the Micro SD card speed,
 it might take up to 5 minutes to burn the entire image.
 
-Once finished, you can simply remove the card, plug into the board, and see if everything sorked as expected sinply booting it attached to a monitor, or TV, and possibly a network cable.
+Once finished, you can simply remove the card, plug into the board, and see if everything worked as expected by simply booting it attached to a monitor, or TV, and possibly a network cable.
 
-If after some second you'll see the following image, your B.E.N.J.A. environment is ready to rock!
+If after some time you see the following image, your B.E.N.J.A. environment is ready to rock!
 
 ![Benja OK Screen](/img/benja-ok.png)
 
